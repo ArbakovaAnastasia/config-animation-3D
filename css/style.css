@@ -59,7 +59,7 @@ button, a {
   background: none;
   border: none;
   outline: none;
-  cursor: pointer;
+  cursor: pointer !important;
   text-decoration: none;
 }
 
@@ -908,11 +908,17 @@ body {
 .sponsors__gallery-item {
   width: 270px;
   height: 180px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .sponsors__gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.sponsors__gallery-item:hover {
+  transform: rotate(-7deg);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 .sponsors__button-wrap {
   width: 100%;

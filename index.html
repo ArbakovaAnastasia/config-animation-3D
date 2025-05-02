@@ -6,106 +6,91 @@
     <title>Config</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js"></script>
-    <script src="js/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/loaders/GLTFLoader.js"></script>
+    <script src="js/three.js" type="module"></script>
 </head>
 <body class="background-light">
+    <!-- header -->
     <header class="header wrap">
-        <div class="header__text">Figma’s conference for people<br>who build products</div>
+        <p class="header__text">Figma’s conference for people<br>who build products</p>
         <div class="header__buttons">
             <a href="speakers.html" class="header__button-speakers">Speakers</a>
             <a href="tickets.html" class="header__button-tickets">Get tickets</a>
         </div>
     </header>
+    <!-- intro -->
     <section class="intro">
         <div class="intro__text wrap">
             <span>June 26-27<br>2024</span> 
             <span>Moscone Center<br>San Francisco, CA</span>
         </div>
-        <div class="intro__animation">
-            <!-- <div class="intro__animation-img-C" id="animationC"><img class="intro__animation-img-C--animation" src="assets/icon/C.svg" alt="C"></div>
-            <div class="intro__animation-img-O" id="animationO"><img class="intro__animation-img-O--animation" src="assets/icon/O.svg" alt="O"></div>
-            <div class="intro__animation-img-N" id="animationN">
-                <img class="intro__animation-img-N-1" src="assets/logo_config/N1.svg" alt="N1">
-                <img class="intro__animation-img-N-2" src="assets/logo_config/N2.svg" alt="N2">
-                <img class="intro__animation-img-N-3" src="assets/logo_config/N3.svg" alt="N3">
-                <div class="square"></div>
-            </div>
-            <div class="intro__animation-img-F" id="animationF">
-                <img class="intro__animation-img-F-1" src="assets/logo_config/F1.svg" alt="F1">
-                <img class="intro__animation-img-F-2" src="assets/logo_config/F2.svg" alt="F2">
-                <img class="intro__animation-img-F-3" src="assets/logo_config/F3.svg" alt="F3">
-            </div>
-            <div class="intro__animation-img-I" id="animationI">
-                <div class="circle"></div>
-                <div class="rhomb"></div>
-            </div>
-            <div class="intro__animation-img-G" id="animationG">
-                <img class="intro__animation-img-G-1" src="assets/logo_config/G1.svg" alt="G1">
-                <img class="intro__animation-img-G-2" src="assets/logo_config/G2.svg" alt="G2">
-            </div> -->
-        </div>
+        <div class="intro__animation" id="animation"></div>
         <div class="intro__picture">
             <img class="intro__picture-bg" src="assets/img/bg-image.png" alt="bg-image">
             <button class="intro__picture-btn"><img src="assets/icon/btn-play.svg" alt="btn-play"></button> 
         </div>
     </section>
+    <!-- join us -->
     <section class="join-us">
         <article class="join-us__article">
-            <div class="join-us__article-subtitle">
+            <h2 class="join-us__article-subtitle">
                 <img src="assets/icon/join-us-icon.svg" alt="join us icon">
                 <span>Join us</span>
-            </div>
-            <div class="join-us__article-title">Early bird tickets available now</div>
-            <div class="join-us__article-text">
+            </h2>
+            <h1 class="join-us__article-title">Early bird tickets available now</h1>
+            <p class="join-us__article-text">
                 Register now to save 50% and be the first to reserve a seat at the most popular talks.
-            </div>
+            </p>
         </article>
         <button class="join-us__button">Get tickets</button>
     </section>
+    <!-- lineup -->
     <section class="lineup">
         <article class="lineup__article">
-            <div class="lineup__article-subtitle">
+            <h2 class="lineup__article-subtitle">
                 <img src="assets/icon/lineup-icon.svg" alt="lineup icon">
                 <span>The lineup</span>
-            </div>
-            <div class="lineup__article-text">
+            </h2>
+            <p class="lineup__article-text">
                 2024 will be the most exciting Config<br>
                 yet, with programming designed to<br>
                 connect a dynamic community of<br>
                 builders to the future of product<br>
                 development.
-            </div>
+            </p>
             <button class="lineup__article-button">See all speakers</button>
         </article>
         <div class="lineup__statistics">
-            <div class="lineup__statistics-line">
+            <p class="lineup__statistics-line">
                 <span class="lineup__statistics-number">75</span>
                 <span class="lineup__statistics-plus">+&nbsp;</span>
                 <span class="lineup__statistics-text">Speakers</span>
-            </div>
-            <div class="lineup__statistics-line">
+            </p>
+            <p class="lineup__statistics-line">
                 <span class="lineup__statistics-number">50</span>
                 <span class="lineup__statistics-plus">+&nbsp;</span>
                 <span class="lineup__statistics-text">Sessions</span>
-            </div>
-            <div class="lineup__statistics-line">
+            </p>
+            <p class="lineup__statistics-line">
                 <span class="lineup__statistics-number">8000</span>
                 <span class="lineup__statistics-plus">+&nbsp;</span>
                 <span class="lineup__statistics-text">Attendees</span>
-            </div>
+            </p>
         </div>
     </section>
+    <!-- sponsors -->
     <section class="sponsors">
         <article class="sponsors__article">
-            <div class="sponsors__article-subtitle">
+            <h2 class="sponsors__article-subtitle">
                 <img src="assets/icon/sponsors-icon.svg" alt="sponsors icon">
                 <span>Sponsors</span>
-            </div>
-            <div class="sponsors__article-title">Thank you to our sponsors</div>
-            <div class="sponsors__article-text">
+            </h2>
+            <h1 class="sponsors__article-title">Thank you to our sponsors</h1>
+            <p class="sponsors__article-text">
                 We're excited to bring you an incredible Config experience,
                 made possible by the support of our sponsors.
-            </div>
+            </p>
         </article>
         <div class="sponsors__gallery">
             <div class="sponsors__gallery-item"><img src="assets/img/coda.png" alt="coda"></div>
@@ -119,25 +104,27 @@
         </div> 
         <div class="sponsors__button-wrap"><button class="sponsors__button">See all sponsors</button></div>
     </section>
+    <!-- break-line -->
     <div class="break-line">
         <div class="break-line-pink"></div>
         <div class="break-line-pink"></div>
         <div class="break-line-pink"></div>
         <div class="break-line-pink"></div>
     </div>
+    <!-- footer -->
     <footer class="footer wrap">
         <div class="footer__up">
             <img src="assets/icon/figma.svg" alt="figma">
             <div class="footer__links">
                 <div class="footer__column">
-                    <div class="footer__column-title">Menu</div>
+                    <h3 class="footer__column-title">Menu</h3>
                     <div class="footer__column-links">
                         <a href="speakers.html" class="footer__column-link"><span>Speakers</span></a>
                         <a href="tickets.html" class="footer__column-link"><span>Get tickets</span></a>
                     </div>
                 </div>
                 <div class="footer__column">
-                    <div class="footer__column-title">Resources</div>
+                    <h3 class="footer__column-title">Resources</h3>
                     <div class="footer__column-links">
                         <a href="#" class="footer__column-link">
                             <span>Why attend</span>
@@ -160,7 +147,7 @@
                     </div>
                 </div>
                 <div class="footer__column">
-                    <div class="footer__column-title">Follow</div>
+                    <h3 class="footer__column-title">Follow</h3>
                     <div class="footer__column-links">
                         <a href="#" class="footer__column-link">
                             <span>X</span>
